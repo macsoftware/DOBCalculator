@@ -55,12 +55,12 @@ class MainActivity : AppCompatActivity() {
                 val theDate = simpleDateFormat.parse(selectedDate)
 
                 theDate?.let {
-                    val selectedDateInMinutes = theDate.time / 60000
+                    val selectedDateInMinutes = theDate.time / Constants.SIXTY_THOUSAND
 
                     val currentDate =
                         simpleDateFormat.parse(simpleDateFormat.format(System.currentTimeMillis()))
                     currentDate?.let {
-                        val currentDateInMinutes = currentDate.time / 60000
+                        val currentDateInMinutes = currentDate.time / Constants.SIXTY_THOUSAND
 
                         val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
 
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             }, year, month, day
         )
 
-        dpd.datePicker.maxDate = System.currentTimeMillis() - 86400000
+        dpd.datePicker.maxDate = System.currentTimeMillis() - Constants.EIGHT_SIX_FOUR_FIVEZEROS
         dpd.show()
     }
 }
