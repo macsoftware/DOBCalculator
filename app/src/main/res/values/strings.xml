@@ -4,7 +4,8 @@
     <string name="age">AGE</string>
     <string name="in_minutes">IN MINUTES</string>
     <string name="select_date">SELECT DATE</string>
-    <string name="sample_dob">16/10/1986</string>
     <string name="selected_date">Selected Date</string>
+    <string name="minutes_from_date">Minutes from above date is</string>
+    <string name="sample_dob">01/01/2000</string>
     <string name="sample_minutes">14000000</string>
 </resources>
